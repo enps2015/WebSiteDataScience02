@@ -1,0 +1,583 @@
+/* Estilos Gerais */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-image: url('../imagens/001.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 100vh;
+}
+
+header h1, 
+header p {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 100px 0;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3em; 
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.hero p {
+  font-size: 1.5em;
+  z-index: 2;
+}
+
+/* Navegação */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 20px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 100; 
+  transition: background-color 0.3s ease;
+}
+
+nav.sticky { 
+  background-color: rgba(0, 0, 0, 0.9); 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #FCA311;
+  color: #FFFFFF;
+}
+
+/* Menu Hambúrguer */
+#btn-menu {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: fixed; /* Fixa o botão no canto superior esquerdo */
+  top: 20px;
+  left: 20px;
+  z-index: 100; /* Garante que o botão fique acima de outros elementos */
+}
+
+.linha {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Menu Lista (estilos para telas maiores) */
+#menu-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Seção Sobre Mim */
+#sobre-mim {
+  background-color: #E5E5E5;
+  color: #14213D;
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#sobre-mim .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.sobre-mim__esquerda {
+  width: 55%;
+}
+
+.sobre-mim__direita {
+  width: 40%;
+  background-color: #FCA311;
+  color: #FFFFFF;
+  padding: 80px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sobre-mim__direita .perfil-foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+  margin: 0 auto; 
+}
+
+#sobre-mim .sobre-mim__esquerda h2 { 
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.sobre-mim__direita h2 {
+  color: #FFFFFF;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#sobre-mim h3,
+#sobre-mim h4 {
+  color: #FCA311;
+  margin-bottom: 10px;
+}
+
+#sobre-mim h3 {
+  font-size: 1.8em;
+}
+
+#sobre-mim h4 {
+  font-size: 1.5em;
+}
+
+#sobre-mim p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sobre-mim__esquerda ul {
+  list-style: disc; 
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.sobre-mim__esquerda li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #14213D;
+}
+
+.sobre-mim__direita p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.botao { 
+  background-color: transparent;
+  color: #14213D;
+  padding: 15px 30px;
+  border: 2px solid #14213D;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.botao:hover {
+  background-color: #14213D;
+  color: #ffffff;
+}
+
+.botao--contato {
+  color: #14213d; 
+}
+
+.botao--contato:hover {
+  background-color: #1413d1;
+  color: #ffffff;
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 60px 0;
+}
+
+
+.call-to-action a img { /* Estilos para a imagem dentro do link */
+  display: block;    /* Faz com que a imagem ocupe toda a largura do link */
+  margin: 0 auto;   /* Centraliza a imagem horizontalmente */
+  max-width: 100%;   /* Impede que a imagem ultrapasse a largura do container */
+  height: auto;     /* Mantém a proporção da imagem */
+}
+
+.call-to-action h3 {
+  color: #14213D;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.call-to-action p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Seção "O que é Data Science?" */
+#o-que-e-data-science {
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 80px 0;
+}
+
+#o-que-e-data-science .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.o-que-e__texto {
+  flex: 1 1 45%;
+  box-sizing: border-box; 
+}
+
+.o-que-e__imagem {
+  flex: 1 1 45%; 
+  box-sizing: border-box; 
+}
+
+#o-que-e-data-science h2 {
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#o-que-e-data-science p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#o-que-e-data-science img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Seção "Subáreas de Dados" */
+#subareas-de-dados {
+  background-color: #E5E5E5;
+  color: #000000;
+  padding: 80px 0;
+}
+
+#subareas-de-dados .container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.subarea {
+  flex: 1 1 45%; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; 
+}
+
+.subarea__texto {
+  order: 2;
+}
+
+.subarea__imagem {
+  order: 1;
+}
+
+#subareas-de-dados h2 {
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  width: 100%; 
+  text-align: center; 
+}
+
+#subareas-de-dados h3 {
+  color: #000000;
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#subareas-de-dados p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#subareas-de-dados img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Carreiras em Dados */
+#carreiras-em-dados {
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 80px 0;
+}
+
+#carreiras-em-dados .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+#carreiras-em-dados h2 {
+  color: #FCA311;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#carreiras-em-dados h3 {
+  color: #FCA311;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#carreiras-em-dados p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#carreiras-em-dados img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Seção "Começando na Data Science" */
+#comecando-na-data-science {
+  background-color: #E5E5E5;
+  color: #14213D;
+  padding: 80px 0;
+}
+
+#comecando-na-data-science .container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.comecando {
+  flex: 1 1 45%;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column; 
+}
+
+#comecando-na-data-science h2 {
+  color: #FCA311; /* Cor do título: amarelo */
+  font-size: 3em;  /* Tamanho da fonte maior */
+  margin-bottom: 20px;
+  width: 100%; 
+  text-align: center;
+}
+
+.comecando h3 {
+  color: #FCA311;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.comecando p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.comecando ul {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.comecando li {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.comecando img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 60px 0;
+  text-align: center; /* Centraliza o texto do footer */
+}
+
+footer h2 {
+  color: #FCA311;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Glossário */
+footer dl {
+  text-align: left; 
+  width: 80%; 
+  margin: 0 auto 40px auto; 
+}
+
+footer dt {
+  color: #E5E5E5;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+footer dd {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  margin-left: 20px; 
+  font-size: 0.9em;
+  display: none;     
+  position: relative; 
+}
+
+footer dd::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #14213D;
+}
+
+footer dt.ativo + dd {
+  display: block;
+}
+
+footer dt:hover dd {
+  display: block;
+}
+
+.social-media {
+  display: flex;           
+  justify-content: center;
+  align-items: center;      
+  margin-top: 40px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.desenvolvedor {
+  color: #E5E5E5;
+  font-size: 0.9em;
+  margin-top: 60px;
+}

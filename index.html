@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science: Uma Jornada pelo Mundo dos Dados</title>
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/media-queries.css"> 
+</head>
+<body>
+
+  <header>
+    <button id="btn-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button> <button id="btn-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button> 
+    <nav id="menu-navegacao">
+      <ul id="menu-lista">
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+        <li><a href="#o-que-e-data-science">O que é Data Science?</a></li>
+        <li><a href="#subareas-de-dados">Subáreas de Dados</a></li>
+        <li><a href="#carreiras-em-dados">Carreiras em Dados</a></li>
+        <li><a href="#comecando-na-data-science">Começando na Data Science</a></li>
+        <li><a href="#glossario">Mini Glossário</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 id="titulo-principal">Data Science: Descubra o poder transformador dos dados e trilhe um caminho de inovação e crescimento</h1> 
+      <p>Desvende o poder dos dados e transforme sua carreira com o conhecimento que irá impulsionar o futuro.</p>             
+    </div>
+  </header>
+
+  <section id="sobre-mim">
+    <div class="container"  data-aos="flip-left"> 
+        <div class="sobre-mim__esquerda"> 
+            <h2>Sobre Mim</h2>
+            <p>
+              Engenheiro Eletricista com anos de experiência, agora ampliando minha atuação para a área de TI, especialmente em Data Science, 
+              uma área que me fascina pelas infinitas possibilidades. Atualmente cursando Análise e Desenvolvimento de Sistemas e participando
+              da Imersão Dev com Google Gemini, em parceria com a Alura e o Google. Busco aprimorar minhas habilidades em programação, 
+              análise de dados e Machine Learning para construir uma carreira sólida e desafiadora como Cientista de Dados.
+            </p>
+
+            <h3>Habilidades</h3>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Cloud Computing</li>
+                <li>DevOps</li>
+                <li>Linux</li>
+                <li>Windows</li>
+            </ul>
+
+            <h3>Projetos</h3>
+            <p>
+              Aqui estão alguns dos meus projetos mais significativos, que demonstram minha evolução e aplicação prática em Data Science. 
+              Cada projeto está disponível com detalhes completos nos repositórios do GitHub. 
+            </p>
+
+            <h4>Projetos de Web Development</h4>
+            <ul>
+              <li><a href="https://github.com/enps2015/doutorEstranho2" target="_blank">Doutor estranho2 - DEVMEDIA</a></li> 
+            </ul>
+
+            <h4>Projetos de Data Science</h4>
+            <ul>
+              <li><a href="https://github.com/enps2015/analiseCovid19v20" target="_blank">Análise da COVID-19 no Brasil</a></li>
+              <li><a href="https://github.com/enps2015/DioAdventureWorks" target="_blank">Análise de Vendas da Adventure Works</a></li>
+              <li><a href="https://github.com/enps2015/top-100-livros-amazon-streamlit" target="_blank">Top 100 Livros Amazon - Streamlit</a></li>
+            </ul>
+
+            <a href="https://www.linkedin.com/in/eric-np-santos/" target="_blank" class="botao botao--contato">Contate-me pelo LinkedIn</a>
+
+            <div class="call-to-action">
+                <h3>Pronto para mergulhar no mundo da Data Science?</h3>
+                <p>Explore as seções a seguir e descubra tudo o que você precisa saber para iniciar sua jornada!</p>
+                <a href="#subareas-de-dados" class="botao botao--destaque">
+                  <img data-src="imagens/call-to-action.jpg" alt="Imagem Call to Action" class="lozad"> 
+                </a> 
+            </div>
+        </div>
+
+        <div class="sobre-mim__direita">
+            <img data-src="imagens/Perfil-imagem.jpeg" alt="Foto do Eric" class="perfil-foto lozad"> 
+            <h2>Olá, eu sou Eric</h2> 
+            <p>Sou Movido pela curiosidade e fascínio por tecnologia. Estou focado em explorar o potencial dos dados para gerar insights valiosos e soluções inovadoras.</p>
+            <div class="social-icons"> 
+                <a href="https://www.linkedin.com/in/eric-np-santos/" target="_blank">
+                  <img data-src="imagens/linkedin-logo.png" alt="LinkedIn" class="lozad">
+                </a>
+                <a href="https://github.com/enps2015" target="_blank">
+                  <img data-src="imagens/github-logo.png" alt="GitHub" class="lozad">
+                </a>
+                <a href="https://web.facebook.com/eric.n.pimentel" target="_blank">
+                  <img data-src="imagens/facebook-logo.png" alt="Facebook" class="lozad">
+                </a>
+                <a href="https://www.instagram.com/eric.n.pimentel/" target="_blank">
+                  <img data-src="imagens/instagram-logo.png" alt="Instagram" class="lozad">
+                </a>
+            </div>
+        </div>
+    </div> 
+  </section>
+
+  <section id="o-que-e-data-science">
+    <div class="container" data-aos="flip-left"> <!-- Animação flip-left -->
+        <div class="o-que-e__texto">
+            <h2>O que é Data Science?</h2>
+            <p>Data Science é um campo interdisciplinar que utiliza métodos científicos, processos, algoritmos e sistemas para extrair conhecimento e insights de dados estruturados e não estruturados. É uma área em constante expansão que combina conhecimentos de estatística, computação e conhecimento de domínio específico para analisar dados e gerar valor para as empresas e para a sociedade. </p>
+        </div>
+        <div class="o-que-e__imagem">
+            <img data-src="imagens/002.jpg" alt="Gráficos e tabelas" class="lozad">
+        </div>
+    </div>
+    <div class="container" data-aos="flip-left"> <!-- Animação flip-left -->
+        <div class="o-que-e__imagem">
+            <img data-src="imagens/008.jpg" alt="Profissional trabalhando com dados" class="lozad"> 
+        </div>
+        <div class="o-que-e__texto">
+            <h2>Por que Data Science?</h2>
+            <p>Em uma era dominada por dados, a Data Science se tornou uma das áreas mais promissoras e requisitadas no mercado de trabalho. As empresas estão buscando cada vez mais profissionais capazes de extrair insights valiosos dos dados para otimizar processos, tomar decisões estratégicas e desenvolver novos produtos e serviços.</p> 
+        </div>
+    </div>
+  </section>
+
+  <section id="subareas-de-dados">
+    <div class="container" data-aos="flip-left"> <!-- Animação flip-left -->
+      <h2>Subáreas de Dados</h2>
+  
+      <div class="subarea"> 
+        <div class="subarea__texto">
+          <h3>Engenharia de Dados</h3>
+          <p>A Engenharia de Dados é responsável por construir e manter a infraestrutura necessária para coletar, armazenar, processar e disponibilizar os dados para análise. Os engenheiros de dados trabalham com ferramentas como bancos de dados, pipelines de dados, Hadoop e Spark para garantir a qualidade, a escalabilidade e a segurança dos dados.</p>
+        </div>
+        <div class="subarea__imagem">
+          <img data-src="imagens/004.jpg" alt="Processo ETL" class="lozad"> 
+        </div>
+      </div>
+  
+      <div class="subarea">
+        <div class="subarea__texto">
+          <h3>Análise de Dados</h3>
+          <p>A Análise de Dados foca na exploração e interpretação dos dados para extrair insights e responder a perguntas de negócio. Os analistas de dados utilizam técnicas estatísticas, ferramentas de visualização e dashboards para identificar padrões, tendências e anomalias nos dados e comunicar suas descobertas de forma clara e concisa.</p>
+        </div>
+        <div class="subarea__imagem">
+          <img data-src="imagens/003.jpg" alt="Tipos de gráficos" class="lozad"> 
+        </div>
+      </div>
+  
+      <div class="subarea">
+        <div class="subarea__texto">
+          <h3>Ciência de Dados</h3>
+          <p>A Ciência de Dados se concentra na construção de modelos preditivos e algoritmos de Machine Learning para resolver problemas complexos e tomar decisões baseadas em dados. Os cientistas de dados utilizam técnicas de aprendizado supervisionado e não supervisionado para criar modelos que podem prever o comportamento futuro, classificar dados e identificar insights ocultos.</p>
+        </div>
+        <div class="subarea__imagem">
+          <img data-src="imagens/005.jpg" alt="Intersecção de áreas da Ciência de Dados" class="lozad"> 
+        </div>
+      </div>
+  
+      <div class="subarea">
+        <div class="subarea__texto">
+          <h3>Visualização de Dados</h3>
+          <p>A Visualização de Dados é a arte de transformar dados em gráficos, mapas e dashboards interativos que facilitam a compreensão e a comunicação de informações complexas. Os especialistas em visualização de dados utilizam ferramentas como Tableau e Power BI para criar visualizações atraentes e informativas que ajudam a identificar padrões, tendências e insights nos dados.</p>
+        </div>
+        <div class="subarea__imagem">
+          <img data-src="imagens/dashboards.jpg" alt="Dashboards" class="lozad"> 
+        </div>
+      </div>
+  
+      <div class="subarea">
+        <div class="subarea__texto">
+          <h3>Arquitetura de Dados</h3>
+          <p>A Arquitetura de Dados é responsável por projetar e implementar a estrutura geral de um sistema de dados, incluindo bancos de dados, data warehouses e data lakes. Os arquitetos de dados trabalham em conjunto com engenheiros de dados e outros profissionais para garantir que a infraestrutura de dados seja escalável, segura e atenda às necessidades do negócio.</p>
+        </div>
+        <div class="subarea__imagem">
+          <img data-src="imagens/arquitetura-dados.jpg" alt="Estrutura de armazenamento de dados" class="lozad"> 
+        </div>
+      </div>
+
+    </div> 
+  </section>
+
+  <section id="carreiras-em-dados">
+    <div class="container" data-aos="flip-left"> <!-- Animação flip-left -->
+        <h2>Carreiras em Dados</h2>
+
+        <h3>Engenheiro(a) de Dados</h3>
+        <p>Responsável por construir e manter a infraestrutura de dados que sustenta as operações de Data Science.  Isso inclui projetar, construir e gerenciar pipelines de dados, data lakes e data warehouses.  Domina tecnologias de Big Data, como Hadoop, Spark e plataformas de cloud computing. Habilidades essenciais incluem  proficiência em SQL, Python ou Scala, além de conhecimentos em bancos de dados NoSQL e modelagem de dados.</p>
+
+        <h3>Analista de Dados</h3>
+        <p>Extrai insights valiosos de dados para solucionar problemas de negócios e apoiar a tomada de decisões estratégicas.  Utiliza técnicas de análise estatística, ferramentas de visualização e dashboards para identificar padrões, tendências e anomalias nos dados.  Habilidades essenciais incluem proficiência em SQL, Excel, Power BI ou Tableau, além de conhecimentos em estatística descritiva e inferencial.</p>
+
+        <h3>Cientista de Dados</h3>
+        <p>Combina expertise em estatística, programação e conhecimento de domínio para analisar dados complexos e construir modelos preditivos.  Utiliza técnicas de Machine Learning e Inteligência Artificial para solucionar problemas de negócios e descobrir novas oportunidades. Habilidades essenciais incluem proficiência em Python ou R, conhecimentos em Machine Learning (aprendizado supervisionado e não supervisionado), além de habilidades em visualização de dados e storytelling.</p>
+
+        <h3>Especialista em Machine Learning</h3>
+        <p>Desenvolve, treina e implementa algoritmos de Machine Learning para criar soluções inteligentes e automatizadas. Domina técnicas de aprendizado supervisionado e não supervisionado, além de frameworks como TensorFlow, PyTorch e Scikit-learn. Possui expertise em otimização de modelos, seleção de features e avaliação de performance.</p>
+
+        <h3>Engenheiro(a) de Machine Learning</h3>
+        <p>Conecta a Ciência de Dados com a Engenharia de Software, implementando e gerenciando modelos de Machine Learning em produção. Garante a escalabilidade, a performance e a confiabilidade das soluções de Machine Learning. Habilidades essenciais incluem proficiência em Python, Cloud Computing (AWS, Azure, GCP),  DevOps e conhecimentos em APIs e integrações.</p>
+
+        <img data-src="imagens/010.jpg" alt="Profissional desenhando diagrama de dados" class="lozad"> 
+    </div> 
+  </section>
+
+  <section id="comecando-na-data-science">
+    <div class="container" data-aos="flip-left"> <!-- Animação flip-left -->
+        <h2>Começando na Data Science</h2>
+
+        <div class="comecando">
+          <h3>Mini Guia</h3>
+          <p>Para iniciar sua jornada na Data Science, siga estes passos: domine os fundamentos de matemática e estatística, aprenda uma linguagem de programação como Python ou R, familiarize-se com as ferramentas essenciais, como Jupyter Notebook e Pandas, e pratique com projetos práticos para construir seu portfólio. </p>
+        </div>
+
+        <div class="comecando">
+          <h3>Linguagens de Programação</h3>
+          <p>Python e R são as linguagens de programação mais populares em Data Science. Python é uma linguagem versátil e fácil de aprender, com uma vasta gama de bibliotecas para análise de dados e Machine Learning. R é uma linguagem focada em estatística e visualização de dados, com um ecossistema rico em pacotes para análise estatística avançada.</p>
+          <img data-src="imagens/011.jpg" alt="Linguagens de programação para Data Science" class="lozad"> 
+        </div>
+
+        <div class="comecando">
+          <h3>Ferramentas Essenciais</h3>
+          <p>Algumas ferramentas essenciais para Data Science incluem: Jupyter Notebook, um ambiente interativo para desenvolvimento e análise de código; Pandas, uma biblioteca Python para manipulação e análise de dados; Scikit-learn, uma biblioteca Python para Machine Learning; Tableau e Power BI, ferramentas para visualização de dados; e bancos de dados como SQL Server e MySQL. </p>
+        </div>
+
+        <div class="comecando">
+          <h3>Projetos Práticos</h3>
+          <p>Comece a construir seu portfólio com projetos práticos, como: análise de dados de um conjunto de dados público, criação de um modelo de previsão de vendas, desenvolvimento de um sistema de recomendação de filmes ou análise de sentimentos em redes sociais. </p>
+        </div>
+
+        <div class="comecando">
+          <p><strong>Dica:</strong>  No final da página, você encontrará um <a href="#glossario">Mini Glossário</a> com a explicação de alguns termos técnicos utilizados no site. </p>
+        </div>
+    </div> 
+  </section>
+
+  <footer>
+    <div class="container">
+      <h2 id="glossario">Mini Glossário</h2>
+        <dl>  
+            <dt class="glossario" data-termo="Dados Estruturados">Dados Estruturados</dt>
+            <dd>Conjunto de dados organizados em linhas e colunas, como uma tabela.</dd>
+            <dt class="glossario" data-termo="Dados Não Estruturados">Dados Não Estruturados</dt>
+            <dd>Dados não organizados em um formato predefinido, como texto livre, imagens e vídeos.</dd>
+            <dt class="glossario" data-termo="Análise Exploratória">Análise Exploratória</dt>
+            <dd>Processo de identificar padrões e insights em dados.</dd>
+            <dt class="glossario" data-termo="Aprendizado Supervisionado">Aprendizado Supervisionado</dt>
+            <dd>Tipo de aprendizado de máquina onde o algoritmo aprende com dados rotulados (com exemplos de entrada e saída).</dd>
+            <dt class="glossario" data-termo="Aprendizado Não Supervisionado">Aprendizado Não Supervisionado</dt>
+            <dd>Tipo de aprendizado de máquina onde o algoritmo aprende com dados não rotulados (sem exemplos de saída).</dd>
+            <dt class="glossario" data-termo="Modelos Preditivos">Modelos Preditivos</dt>
+            <dd>Modelos que podem prever valores futuros com base em dados históricos.</dd>
+            <dt class="glossario" data-termo="Limpeza de Dados">Limpeza de Dados</dt>
+            <dd>Processo de transformar dados brutos em um formato adequado para análise.</dd>
+            <dt class="glossario" data-termo="Dados de Treinamento">Dados de Treinamento</dt>
+            <dd>Conjunto de dados utilizados para treinar um modelo de Machine Learning.</dd>
+            <dt class="glossario" data-termo="Dados de Teste">Dados de Teste</dt>
+            <dd>Conjunto de dados utilizados para avaliar a performance de um modelo de Machine Learning.</dd>
+            <dt class="glossario" data-termo="Google Cloud Platform (GCP)">Google Cloud Platform (GCP)</dt>
+            <dd>Plataforma de computação em nuvem da Google.</dd>
+        </dl>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/eric-np-santos/" target="_blank">
+              <img data-src="imagens/linkedin-logo.png" alt="LinkedIn" class="lozad">
+            </a>
+            <a href="https://github.com/enps2015" target="_blank">
+              <img data-src="imagens/github-logo.png" alt="GitHub" class="lozad">
+            </a>
+            <a href="https://web.facebook.com/eric.n.pimentel" target="_blank">
+              <img data-src="imagens/facebook-logo.png" alt="Facebook" class="lozad">
+            </a>
+            <a href="https://www.instagram.com/eric.n.pimentel/" target="_blank">
+              <img data-src="imagens/instagram-logo.png" alt="Instagram" class="lozad">
+            </a>
+        </div>
+        <p class="desenvolvedor">Desenvolvido por Eric Pimentel (com auxilio de genAI Gemini) Belém-PA 2024</p>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/script.js"></script> 
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

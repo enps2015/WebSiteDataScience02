@@ -1,0 +1,131 @@
+/* Estilos para telas menores (até 768px) */
+@media (max-width: 768px) {
+
+  /* Cabeçalho */
+  header {
+    min-height: auto; 
+  }
+
+  .hero {
+    padding: 60px 0;  
+  }
+
+  .hero h1 {
+    font-size: 2.2em; 
+  }
+
+  /* Seção Sobre Mim */
+  #sobre-mim .container {
+    flex-direction: column; 
+    gap: 40px; 
+  }
+
+  .sobre-mim__esquerda, 
+  .sobre-mim__direita {
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .call-to-action a img {
+    width: 80%;  
+  }
+
+  /* Seção "O Que é Data Science?" */
+  #o-que-e-data-science .container {
+    flex-direction: column; 
+    gap: 30px; 
+  }
+
+  .o-que-e__texto, 
+  .o-que-e__imagem {
+    flex: 1 1 100%; 
+  }
+
+  /* Seção "Subáreas de Dados" */
+  #subareas-de-dados .container {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  .subarea {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Seção "Carreiras em Dados" */
+  #carreiras-em-dados .container {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  /* Seção "Começando na Data Science" */
+  #comecando-na-data-science .container {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  .comecando {
+    flex: 1 1 100%; 
+  }
+
+  /* Menu Lateral */
+  #menu-navegacao { /* position: fixed aplicado ao pai do menu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; 
+    background-color: #14213D; 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out;
+    z-index: 100; 
+  }
+
+  #menu-navegacao.aberto {
+    transform: translateX(0); 
+  }
+
+  #menu-lista { /* position: fixed removido daqui */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    height: 100%;
+    padding: 20px; 
+  }
+
+  #menu-lista li {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  #menu-lista a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    display: block; 
+  }
+
+  #menu-lista a:hover {
+    background-color: #FCA311;
+  }
+
+  /* Animação do Ícone */
+  #btn-menu.aberto .linha:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #btn-menu.aberto .linha:nth-child(2) {
+    opacity: 0;
+  }
+
+  #btn-menu.aberto .linha:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* Menu Hambúrguer */
+  #btn-menu {
+    display: block; /* Exibe o botão em telas menores */
+  }
+}
